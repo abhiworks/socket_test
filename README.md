@@ -24,21 +24,21 @@ Multiple node instance for single socket Event
 More Information available in https://redis.io/topics/quickstart
 
 #### Install NPM packages in both instance
-    $ npm install
+    :/socket1$ npm install
     > uws@0.14.5 install /var/www/test/socket_test/chat_3000/node_modules/socket.io/node_modules/engine.io/node_modules/uws
     > node-gyp rebuild > build_log.txt 2>&1 || exit 0
     more Logs..
     
-    $ npm install
+    :/socket2$ npm install
     > uws@0.14.5 install /var/www/test/socket_test/chat_3000/node_modules/socket.io/node_modules/engine.io/node_modules/uws
     > node-gyp rebuild > build_log.txt 2>&1 || exit 0
     more logs..
     
 #### Start node server in both instances
-     $ node index.js
+     :/socket1$ node index.js
      listening on *:3000
      
-     $ node index.js
+     :/socket2$ node index.js
      listening on *:3001
      
 #### Run both server in seperate browsers 
