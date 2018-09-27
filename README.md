@@ -14,6 +14,9 @@ Multiple node instance for single socket Event
      [28550] 01 Aug 19:29:28 * Server started, Redis version 2.2.12
      [28550] 01 Aug 19:29:28 * The server is now ready to accept connections on port 6379
     ... more logs ...
+##### Note : Copy redis-server and redi-cli manually if not available to execute
+     sudo cp src/redis-server /usr/local/bin/
+     sudo cp src/redis-cli /usr/local/bin/
 #### Check Redis Working
      $ redis-cli ping
      PONG
